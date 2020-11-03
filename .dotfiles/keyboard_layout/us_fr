@@ -1,3 +1,5 @@
+
+partial alphanumeric_keys
 xkb_symbols "fr" {
     name[Group1]="French (US)";
     include "level3(ralt_switch)"

@@ -21,3 +21,8 @@ From [www.keyboard-layout-editor.com](www.keyboard-layout-editor)
   * Plug keyboard
   * `Fn` then `L_Ctrl` then `Pn` then `Pn`
   * Turn off DIP switch 4
+
+## Set keyboard layout
+```sh
+.set_layout.sh
+```
