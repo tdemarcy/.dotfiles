@@ -6,4 +6,4 @@ sudo sed -i 's/^XKBVARIANT.*/XKBVARIANT="fr"/' /etc/default/keyboard # custom va
 sudo sed -i 's/^XKBOPTIONS.*/XKBOPTIONS="lv3:ralt_switch,compose:rwin"/' /etc/default/keyboard
 
 # Add custom variant
-sudo cat $HOME/.dotfiles/keyboard_layout/us_fr >> /usr/share/X11/xkb/symbols/us
+cat $HOME/.dotfiles/keyboard_layout/us_fr | sudo tee -a /usr/share/X11/xkb/symbols/us > /dev/null
