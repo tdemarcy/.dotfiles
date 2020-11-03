@@ -11,6 +11,7 @@ sudo -i
 adduser tdemarcy
 adduser tdemarcy sudo
 logout
+logout
 ```
 Login back as `tdemarcy`.
 
@@ -19,12 +20,33 @@ sudo deluser pi
 sudo passwd root
 ```
 
+## Set keyboard layout to US
+```sh
+sudo sed -i 's/^XKBLAYOUT.*/XKBLAYOUT="us"/' /etc/default/keyboard
+```
+
+## Configure Wi-Fi
+```sh
+sudo wpa_cli
+add_network
+set_network 0 ssid "SSID"
+set_network 0 psk "PASSPHRASE"
+enable_network 0
+save_config
+quit
+```
+
 ## Disable black border
 ```sh
 sudo sed -i '/disable_overscan/s/^#//g' /boot/config.txt
 ```
 
-## Update
+## Reboot and update
+```sh
+reboot
+```
+Login.
+
 ```sh
 sudo apt update
 sudo apt upgrade
@@ -34,4 +56,6 @@ sudo apt upgrade
 ```sh
 sudo apt install git
 git clone --bare https://github.com/tdemarcy/dotfiles.git $HOME/.dotfiles
+rm .bashrc
+git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 ```
