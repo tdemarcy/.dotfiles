@@ -1,0 +1,8 @@
+[user]
+	email = tdemarcy@gmail.com
+	name = Thomas Demarcy
+
+[color]
+	diff = auto 
+	status = auto 
+	branch = auto 
