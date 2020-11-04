@@ -1,0 +1,27 @@
+general {
+  output_format = "i3bar"
+  colors = true
+}
+
+order += "cpu_usage"
+order += "cpu_temperature 0"
+order += "disk /"
+order += "time"
+
+cpu_usage {
+  format = "%usage"
+  separator = false
+}
+
+cpu_temperature 0 {
+  format = "%degrees°C"
+}
+
+disk "/" {
+  format = "%used (%percentage_used)"
+  prefix_type = "decimal"
+}
+
+time {
+  format = "%H:%M %d/%m/%Y "
+}
