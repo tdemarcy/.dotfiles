@@ -18,6 +18,12 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey '\e[A' history-beginning-search-backward-end
+bindkey '\e[B' history-beginning-search-forward-end
+
 # completion
 autoload -Uz compinit
 compinit
