@@ -35,3 +35,7 @@
 *color13: nord15
 *color14: nord7
 *color15: nord6
+
+URxvt.font: xft:Hack:size=11
+URxvt.scrollBar: false
+URxvt.internalBorder: 0
