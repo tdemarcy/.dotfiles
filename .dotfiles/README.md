@@ -56,6 +56,5 @@ sudo apt upgrade
 ```sh
 sudo apt install git
 git clone --bare https://github.com/tdemarcy/dotfiles.git $HOME/.dotfiles
-rm .bashrc
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 ```
