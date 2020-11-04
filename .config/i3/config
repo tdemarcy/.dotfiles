@@ -125,15 +125,30 @@ bindsym $mod+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+plus scratchpad show
 
-# navigate to next / previous workspace
+# toggle sticky window
+bindsym $mod+s sticky toggle
+
+# center floating window
+bindsym $mod+c move absolute position center
+
+# navigate to next workspace
 bindsym $mod+Tab workspace next
 
 # navigate to previous workspace
 bindsym $mod+Shift+Tab workspace prev
 
+# carry window to next workspace
+bindsym $mod+n move container to workspace next; workspace next
+
+# carry window to previous workspace
+bindsym $mod+Shift+n move container to workspace prev; workspace prev
+
 # switch between the current and the previously focused one
 bindsym $mod+z workspace back_and_forth
 bindsym $mod+Shift+z move container to workspace back_and_forth
+
+# toggle bar visibility
+bindsym $mod+b bar mode toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -233,3 +248,9 @@ client.urgent           $background $urgent     $foreground $urgent     $urgent
 client.placeholder      $background $background $foreground $background $background
 
 client.background       $background
+
+# disable title bar
+default_border pixel 1
+
+# hide borders on workspaces with only one window
+hide_edge_borders smart
