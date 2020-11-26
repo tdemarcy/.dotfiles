@@ -1,6 +1,9 @@
 general {
   output_format = "i3bar"
   colors = true
+  color_good = "#5198D1"
+  color_degraded = "#7761A4"
+  color_bad = "#F26525"
 }
 
 order += "cpu_usage"
