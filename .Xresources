@@ -1,40 +1,23 @@
-! color palette from www.nordtheme.com
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+*foreground: #D8DEE9
+*background: #26120B
 
-*foreground: nord4
-*background: nord0
-*fadeColor: nord3
-*color0: nord1
-*color1: nord11
-*color2: nord14
-*color3: nord13
-*color4: nord9
-*color5: nord15
-*color6: nord8
-*color7: nord5
-*color8: nord3
-*color9: nord11
-*color10: nord14
-*color11: nord13
-*color12: nord9
-*color13: nord15
-*color14: nord7
-*color15: nord6
+*color0: #494853
+*color1: #F26525
+*color2: #7761A4
+*color3: #F78F49
+*color4: #5198D1
+*color5: #DE7BA8
+*color6: #5198D1
+*color7: #E5E9F0
+*fadeColor: #4E4D53
+*color8: #4E4D53
+*color9: #F2AC8C
+*color10: #8E83A4
+*color11: #F7C3A0
+*color12: #91B4D1
+*color13: #DEADC3
+*color14: #91B4D1
+*color15: #EAECF0
 
 URxvt.font: xft:Hack:size=11
 URxvt.scrollBar: false
