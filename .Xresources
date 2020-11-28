@@ -1,23 +1,23 @@
-*foreground: #D8DEE9
-*background: #26120B
-
-*color0: #494853
-*color1: #F26525
-*color2: #7761A4
-*color3: #F78F49
-*color4: #5198D1
-*color5: #DE7BA8
-*color6: #5198D1
-*color7: #E5E9F0
-*fadeColor: #4E4D53
-*color8: #4E4D53
-*color9: #F2AC8C
-*color10: #8E83A4
-*color11: #F7C3A0
-*color12: #91B4D1
-*color13: #DEADC3
-*color14: #91B4D1
-*color15: #EAECF0
+*background: #121212
+*foreground: #E4E4E4
+----
+*color0: #4E4E4E
+*color1: #FF5F00
+*color2: #875FAF
+*color3: #FF8700
+*color4: #5F87D7
+*color5: #D787AF
+*color6: #5F87D7
+*color7: #EEEEEE
+*fadeColor: #585858
+*color8: #585858
+*color9: #FF875F
+*color10: #8787AF
+*color11: #FFAF5F
+*color12: #87AFD7
+*color13: #D7AFAF
+*color14: #87AFD7
+*color15: #FFFFFF
 
 URxvt.font: xft:Hack:size=11
 URxvt.scrollBar: false
