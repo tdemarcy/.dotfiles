@@ -5,4 +5,10 @@ alias egrep='egrep -color=auto'
 alias ll='ls -l'
 alias la='ls -A'
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config () {
+  if [[ $1 == "clean" ]]; then
+    echo "impossible to clean home directory"
+  else
+    command /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME "$@"
+  fi
+}
