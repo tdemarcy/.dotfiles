@@ -34,6 +34,7 @@ set_network 0 psk "PASSPHRASE"
 enable_network 0
 save_config
 quit
+sudo rfkill unblock 0
 ```
 
 ## Disable black border
