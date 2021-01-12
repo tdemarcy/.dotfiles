@@ -1,22 +1,39 @@
-*background: #121212
-*foreground: #E4E4E4
-*color0: #4E4E4E
-*color1: #FF5F00
-*color2: #875FAF
-*color3: #FF8700
-*color4: #5F87D7
-*color5: #D787AF
-*color6: #5F87D7
-*color7: #EEEEEE
-*fadeColor: #585858
-*color8: #585858
-*color9: #FF875F
-*color10: #8787AF
-*color11: #FFAF5F
-*color12: #87AFD7
-*color13: #D7AFAF
-*color14: #87AFD7
-*color15: #FFFFFF
+! special
+*.foreground:   #e4e4e4
+*.background:   #121212
+*.cursorColor:  #e4e4e4
+
+! black
+*.color0:       #4e4e4e
+*.color8:       #585858
+
+! red
+*.color1:       #ff5f00
+*.color9:       #ff875f
+
+! green
+*.color2:       #875faf
+*.color10:      #8787af
+
+! yellow
+*.color3:       #ff8700
+*.color11:      #ffaf5f
+
+! blue
+*.color4:       #5f87d7
+*.color12:      #87afd7
+
+! magenta
+*.color5:       #d787af
+*.color13:      #d7afaf
+
+! cyan
+*.color6:       #5f87d7
+*.color14:      #87afd7
+
+! white
+*.color7:       #eeeeee
+*.color15:      #ffffff
 
 URxvt.font: xft:Hack:size=11
 URxvt.scrollBar: false
