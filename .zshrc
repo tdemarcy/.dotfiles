@@ -15,13 +15,6 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 
 
-# History search:
-autoload -U history-search
-# Filter the history on input beginning with the current text
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
-
-
 # Misc:
 # Try to correct the spelling of all arguments in a line
 setopt CORRECT_ALL
@@ -38,36 +31,49 @@ zstyle ':completion:*' menu select
 
 
 # Prompt:
-# https://zserge.com/posts/terminal/
 autoload -U colors vcs_info
 colors
 zstyle ':vcs_info:*' stagedstr '%F{green}●%f'
 zstyle ':vcs_info:*' unstagedstr '%F{yellow}●%f'
 zstyle ':vcs_info:git:*' check-for-changes true
+# %b branch, %u unstaged changes, %c staged changes
 zstyle ':vcs_info:git*' formats "%F{blue}%b%f %u%c"
 
-_ps1() {
+
+function set-prompt {
   vcs_info
-  GLYPH="▲"
-  [ "x$KEYMAP" = "xvicmd" ] && GLYPH="▼"
+  case ${KEYMAP} in
+    (vicmd) GLYPH="▼" ;; # vi command mode
+    (main|viins) GLYPH="▲" ;; # vi insert mode
+  esac
+  # %(?.<success>.<failure>)
+  # %j number of jobs
+  # %~ working directory
+  # %! with privileges?
   PS1="%(?.%F{blue}.%F{red})$GLYPH%f %(1j.%F{green}[%j]%f .)%F{blue}%~%f %(!.%F{red}#%f .)"
   RPROMPT="$vcs_info_msg_0_"
 }
-_ps1
+set-prompt
 
-
-# vi mode:
-zle-keymap-select () {
-  _ps1
-  zle reset-prompt
-}
-zle -N zle-keymap-select
-zle-line-init () {
-  zle -K viins
+function zle-line-init zle-keymap-select {
+    set-prompt
+    zle reset-prompt
 }
 zle -N zle-line-init
-# vi keybindings
+zle -N zle-keymap-select
+
+
+# vi keybindings:
 bindkey -v
+# use backspace to delete
+bindkey "^?" backward-delete-char
+
+
+# History search:
+autoload -U history-search
+# Filter the history on input beginning with the current text
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
 
 
 # Aliases:
