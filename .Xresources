@@ -52,5 +52,6 @@
 *color7:       base05
 *color15:      base07
 
-URxvt.font: xft:Hack:size=11
+URxvt.font: xft:Hack:size=10
 URxvt.scrollBar: false
+URxvt.internalBorder: 10
