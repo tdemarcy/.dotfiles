@@ -49,7 +49,7 @@ function set-prompt {
   # %j number of jobs
   # %~ working directory
   # %! with privileges?
-  PS1="%(?.%F{blue}.%F{red})$GLYPH%f %(1j.%F{blue}[%j]%f .)%F{blue}%3~%f %(!.%F{red}#%f .)"
+  PS1="%(?.%F{blue}.%F{red})$GLYPH%f %(1j.%F{blue}[%j]%f .)%F{blue}%3~%f %(!.%F{red}◆%f .)"
 
 
   # python virtual env
