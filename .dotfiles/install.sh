@@ -15,4 +15,4 @@ sudo apt -y install rxvt-unicode
 sudo apt -y install zsh
 chsh -s $(which zsh)
 sudo ln -s $HOME/.zshrc  /root/.zshrc
-sudo ln -s $HOME/.bash_aliases  /root/.bash_aliases
+sudo ln -s $HOME/.aliases  /root/.bash_aliases
