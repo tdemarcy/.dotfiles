@@ -1,6 +1,11 @@
+# Path:
+export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/snap/bin:/opt"
+
+
 # Navigation:
 # Perform the cd command if command is the name of directory
 setopt AUTO_CD
+
 
 # History:
 HISTSIZE=10000
@@ -91,3 +96,4 @@ bindkey -M vicmd j history-beginning-search-forward
 
 # Aliases:
 source $HOME/.aliases
+
