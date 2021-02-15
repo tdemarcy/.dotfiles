@@ -1,5 +1,5 @@
 # Path:
-export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/snap/bin:/opt"
+export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/opt"
 
 
 # Navigation:
@@ -96,4 +96,3 @@ bindkey -M vicmd j history-beginning-search-forward
 
 # Aliases:
 source $HOME/.aliases
-
