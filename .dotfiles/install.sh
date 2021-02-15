@@ -21,11 +21,17 @@ sudo chsh -s $(which zsh)
 # Install command-line tools
 sudo apt -y install curl
 sudo apt -y install wget
+sudo apt -y install tree
+sudo apt -y install fzf
 
 # Install vim
 sudo apt -y install vim
 
 # Install build system
-sudo apt -y instal build-essential
+sudo apt -y install build-essential
 sudo apt -y install python3-dev
+sudo apt -y install python3-tk
+
+# Install image viewer
+sudo apt -y install feh
 
