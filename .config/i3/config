@@ -36,6 +36,9 @@ font pango:Hack 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn't scale on retina/hidpi displays.
 
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill $HOME/pictures/wallpaper.jpg
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up k
@@ -50,7 +53,7 @@ floating_modifier $mod
 bindsym $mod+Return exec rxvt-unicode
 
 # start a browser
-bindsym $mod+Shift+Return exec vivaldi
+bindsym $mod+Shift+Return exec vivaldi --new-window https://duckduckgo.com
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -256,3 +259,7 @@ default_border pixel 1
 
 # hide borders on workspaces with only one window
 hide_edge_borders smart
+
+# image viewer in floating mode
+for_window [class="feh"] floating enable
+
