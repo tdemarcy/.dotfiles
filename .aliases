@@ -16,4 +16,4 @@ config () {
 
 alias python='python3'
 alias pip='pip3'
-alias oni2='/opt/oni2/Onivim2-x86_64-master.AppImage'
+alias feh='feh --image-bg #181818'
