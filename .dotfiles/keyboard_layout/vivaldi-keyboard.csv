@@ -1,151 +1,176 @@
 Index,Type,Keys,Description
 1,Window,Ctrl+N,New Window
 2,Window,Ctrl+Shift+N ,New Private Window
-3,Window,,Close Window
-4,Window,F2,Quick Commands
-5,Window,Shift+Esc ,Task Manager
-6,Window,Alt+P ,Settings
-7,Window,Ctrl+Shift+E ,Extensions
-8,Window,Ctrl+H,History
-9,Window,Ctrl+B ,Bookmarks
-10,Window,,Welcome Page
-11,Window,Ctrl+Shift+Del ,Delete Browsing Data
-12,Window,,Exit
-13,Window,F1,Help
-14,Window,Ctrl+F1,Keyboard Cheat Sheet
-15,Window,,Show WebPage Access Key Shortcuts
-16,Window,,Capture Area to File
-17,Window,,Capture Area to Clipboard
-18,Window,,Export Notes
-19,Window,,Import Notes
-20,Window,Ctrl+P,Print  
-21,Window,Ctrl+U,View Page Source
-22,Window,Ctrl+Shift+I or F12,Developer Tools
-23,Window,,Developer Tools Element Inspector
-24,Window,Ctrl+Shift+J,Developer Tools Console
-25,Window,,Export Settings
-26,Window,,Paste as Plain Text
-27,Window,Ctrl+Shift+V,Paste and Go
-28,Window,,Paste to New Note
-29,Window,,Minimize
-30,View,F11,Fullscreen Mode
-31,View,Ctrl+Shift+B,Bookmarks Bar
-32,View,Ctrl+M,Menu Position
-33,View,Ctrl+Shift+S,Status Bar
-34,View,,Next Theme
-35,View,,Tab Bar
-36,View,,Panel Toggle
-37,View,,Address Bar
-38,View,Ctrl+F11,Toggle Ul
-39,View,Ctrl+= or Ctrl++,Page Zoom In 
-40,View,Ctrl+-,Page Zoom Out
-41,View,,Page Zoom Out Half
-42,View,,Page Zoom In Double
-43,View,"Ctrl+0 or Ctrl+Numpad0  or Ctrl+""",Page Zoom Reset
-44,View,,Ul Zoom In
-45,View,,Ul Zoom Out
-46,View,,UI Zoom Reset
-47,View,F4,Panel
-48,View,F7,Focus Panel
-49,View,,Toggle Floating Panel
-50,View,Alt+F7,Open Next Panel
-51,View,Alt+Shift+F4,Open Previous Panel
-52,View,F6,Bookmarks Panel
-53,View,Ctrl+Shift+D or Ctrl+J,Downloads Panel
-54,View,Ctrl+Shift+O,Notes Panel
-55,View,Ctrl+Shift+H,History Panel
-56,View,,Window Panel
-57,View,,Web Panel 1
-58,View,,Web Panel 2
-59,View,,Web Panel 3
-60,View,,Web Panel 4
-61,View,,Web Panel 5
-62,View,,Web Panel 6
-63,View,,Web Panel 7
-64,View,,Web Panel 8
-65,View,,Web Panel 9
-66,Tab,Ctrl+T ,New Tab 
-67,Tab,,New Background Tab 
-68,Tab,Ctrl+Alt+T ,Clone Tab 
-69,Tab,,Move Tab to New Window 
-70,Tab,,Toggle Pin Tab 
-71,Tab,Ctrl+W or Ctrl+F4,Close Tab 
-72,Tab,,Close Tabs to the Left 
-73,Tab,,Close Tabs to the Right 
-74,Tab,,Close Other Tabs 
-75,Tab,,Tab Thumbnail 
-76,Tab,Ctrl+Shift+Tab,Tab Cycler Back 
-77,Tab,Ctrl+Tab,Tab Cycler Forward 
-78,Tab,Ctrl+PageUp,Previous Tab (by Order) 
-79,Tab,Ctrl+PageDown,Next Tab (by Order) 
-80,Tab,,Previous Tab (Recent) 
-81,Tab,,Next Tab (Recent) 
-82,Tab,Ctrl+Shift+PageUp ,Move Active Tab Backward 
-83,Tab,Ctrl+Shift+PageDown,Move Active Tab Forward 
-84,Tab,,Select Previous Tab 
-85,Tab,,Select Next Tab 
-86,Tab,,Select Related Tabs 
-87,Tab,,Deselect Tabs 
-88,Tab,Ctrl+1 or Ctrl+Numpad1 ,Switch to Tab 1 
-89,Tab,Ctrl+2 or Ctrl+Numpad2 ,Switch to Tab 2 
-90,Tab,Ctrl+3 or Ctrl+Numpad 3 ,Switch to Tab 3 
-91,Tab,Ctrl+4 or Ctrl+Numpad4 ,Switch to Tab 4 
-92,Tab,Ctrl+5 or Ctrl+Numpad5 ,Switch to Tab 5 
-93,Tab,Ctrl+6 or Ctrl+Nurnpad6 ,Switch to Tab 6 
-94,Tab,Ctrl+7 or Ctrl+Numpad7 ,Switch to Tab 7 
-95,Tab,Ctrl+8 or Ctrl+Numpad8,Switch to Tab 8
-96,Tab,Ctrl+9 or Ctrl+Numpad9,Switch to the Last Tab 
-97,Tab,,Show Closed Tabs
-98,Tab,Ctrl+Z or Ctrl+Shift+T,Reopen Closed Tab
-99,Tab,Ctrl+F9 ,Tile Vertically
-100,Tab,Ctrl+F8 ,Tile Horizontally
-101,Tab,Ctrl+F7,Tile to Grid
-102,Tab,Ctrl+F6 ,Untile Tabs
-103,Tab,,Create Tab Stack 
-104,Tab,,Ungroup Tab Stack 
-105,Tab,,Remove from Tab Stack
-106,Tab,Ctrl+Shift+Alt+1,Load Images
-107,Tab,,Mute / Unmute Tab 
-108,Tab,,Mute Other Tabs 
-109,Tab,,Mute All Tabs 
-110,Tab,,Unmute Other Tabs 
-111,Tab,,Unmute All Tabs 
-112,Tab,,Capture Page to File 
-113,Tab,,Capture Page to Clipboard
-114,Page,,Import Bookmarks and Settings
-115,Page,,Export Bookmarks
-116,Page,,Open Link in New Tab (Over a Link)
-117,Page,,Open Link in Background Tab (Overa 
-118,Page,,Toggle Reader View 
-119,Page,,Bookmark Selected Tabs 
-120,Page,,Save Open Tabs as Session
-121,Page,,Save Selected Tabs as Session 
-122,Page,,Open Saved Session
-123,Page,Ctrl+D,Create Bookmark
-124,Page,Alt+D ,Focus Address Field
-125,Page,Ctrl+R or F5,Reload Page
-126,Page,Ctrl+Shift+R or Ctrl+F5 ,Force Page Reload
-127,Page,,Page Up
-128,Page,,Page Down
-129,Page,,Scroll Page to Top
-130,Page,,Scroll Page to Bottom
-131,Page,F9,Focus Page
-132,Page,,Disable Keyboard Shortcuts
-133,Page,Ctrl+K or Ctrl+E,Focus Search Field
-134,Page,Ctrl+F,Find in Page
-135,Page,F3 or Ctrl+G,Find Next in Page
-136,Page,Shift+F3 or Ctrl+Shift+G,Find Previous in Page
-137,Page,Backspace or Ctrl+Left or Alt+Left,History Back
-138,Page,Ctrl+Right or Alt+Right,History Forward
-139,Page,,History Rewind
-140,Page,,Fast Forward
-141,Page,Esc,Stop Loading
-142,Page,Ctrl+O,Open File
-143,Page,Ctrl+S,Save Page As
-144,Page,,Search with Selection
-145,Page,Alt+Home,Home
-146,Page,Ctrl+Shift+C,Copy Selected Text to Note
-147,Page,Shift+Left,Spatial Navigation Left
-148,Page,Shift+Up,Spatial Navigation Up
-149,Page,Shift+Right,Spatial Navigation Right
-150,Page,Shift+Down,Spatial Navigation Down
+3,Window,,New Guest Window
+4,Window,,Manage Profiles
+5,Window,,Close Window
+6,Window,Ctrl+Shift+P ,Quick Commands
+7,Window,Shift+Esc,Task Manager
+8,Window,"Ctrl+,",Settings
+9,Window,Ctrl+Shift+E,Extensions
+10,Window,,History
+11,Window,,Notes
+12,Window,Ctrl+B,Bookmarks
+13,Window,,Vivaldi Welcom Tour
+14,Window,Ctrl+Shift+Del,Delete Browsing Data
+15,Window,,Apple Events
+16,Window,Ctrl+Q,Exit
+17,Window,,Quit Vivaldi
+18,Window,,Vivaldi Help
+19,Window,,Keyboard Cheat Sheet
+20,Window,,Report A Bug On The Forum
+21,Window,,Show Webpage Access Key Shortcuts
+22,Window,,Break Mode
+23,Window,Ctrl+\,Cast
+24,Window,,Capture Area to File
+25,Window,,Capture Area to Clipboard
+26,Window,,Focus Next Pane
+27,Window,,Focus Previous Pane
+28,Window,,About
+29,Window,,Check for Updates
+30,Window,,Community Blogs
+31,Window,,Export Notes
+32,Window,,Import Notes
+33,Window,,Block / Unblock Tracking
+34,Window,,Block / Unblock Ads and Tracking
+35,Window,,Print  
+36,Window,Ctrl+U,View Page Source
+37,Window,Ctrl+Shift+I,Developer Tools
+38,Window,,Developer Tools Element Inspector
+39,Window,Ctrl+Shift+J,Developer Tools Console
+40,Window,"Ctrl+Shift+,",Export Settings
+41,Window,Ctrl+Shift+V,Paste as Plain Text
+42,Window,,Paste and Go
+43,Window,,Paste to New Note
+44,Window,,Minimize
+45,Window,,Open Link
+46,View,Ctrl+Shift+F,Fullscreen Mode
+47,View,,Bookmarks Bar
+48,View,,Menu Position
+49,View,Ctrl+Shift+S,Status Bar
+50,View,,Next Theme
+51,View,,Tab Bar
+52,View,,Panel Toggle
+53,View,,Address Bar
+54,View,Ctrl+F,Toggle Ul
+55,View,Ctrl+=,Page Zoom In 
+56,View,Ctrl+-,Page Zoom Out
+57,View,,Page Zoom Out Half
+58,View,,Page Zoom In Double
+59,View,Ctrl+0,Page Zoom Reset
+60,View,,Ul Zoom In
+61,View,,Ul Zoom Out
+62,View,,UI Zoom Reset
+63,View,Ctrl+Shift+B,Panel
+64,View,,Focus Panel
+65,View,,Focus Main Menu
+66,View,,Focus Bookmarks Bar
+67,View,,Focus Tab Bar
+68,View,,Focus Panel Bar
+69,View,,Toggle Floating Panel
+70,View,,Open Next Panel
+71,View,,Open Previous Panel
+72,View,,Bookmarks Panel
+73,View,Ctrl+Shift+D,Downloads Panel
+74,View,Ctrl+Shift+O,Notes Panel
+75,View,Ctrl+Shift+H,History Panel
+76,View,Ctrl+Shift+W,Window Panel
+77,View,,Web Panel 1
+78,View,,Web Panel 2
+79,View,,Web Panel 3
+80,View,,Web Panel 4
+81,View,,Web Panel 5
+82,View,,Web Panel 6
+83,View,,Web Panel 7
+84,View,,Web Panel 8
+85,View,,Web Panel 9
+86,Tab,Ctrl+T ,New Tab 
+87,Tab,,New Background Tab 
+88,Tab,Ctrl+D,Clone Tab 
+89,Tab,Ctrl+Shift+T,Move Tab to New Window 
+90,Tab,,Pin / Unpin Tab
+91,Tab,Ctrl+W,Close Tab 
+92,Tab,,Close Tabs to the Left 
+93,Tab,,Close Tabs to the Right 
+94,Tab,,Close Other Tabs 
+95,Tab,,Tab Thumbnail 
+96,Tab,,Tab Cycler Back 
+97,Tab,,Tab Cycler Forward 
+98,Tab,Ctrl+Shift+Tab,Previous Tab (by Order) 
+99,Tab,Ctrl+Tab,Next Tab (by Order) 
+100,Tab,,Previous Tab (Recent) 
+101,Tab,,Next Tab (Recent) 
+102,Tab,,Move Active Tab Backward 
+103,Tab,,Move Active Tab Forward 
+104,Tab,,Disable Periodic Timers
+105,Tab,,Select Previous Tab 
+106,Tab,,Select Next Tab 
+107,Tab,,Select Related Tabs 
+108,Tab,,Deselect Tabs 
+109,Tab,Ctrl+1,Switch to Tab 1 
+110,Tab,Ctrl+2,Switch to Tab 2 
+111,Tab,Ctrl+3,Switch to Tab 3 
+112,Tab,Ctrl+4,Switch to Tab 4 
+113,Tab,Ctrl+5,Switch to Tab 5 
+114,Tab,Ctrl+6,Switch to Tab 6 
+115,Tab,Ctrl+7,Switch to Tab 7 
+116,Tab,Ctrl+8,Switch to Tab 8
+117,Tab,Ctrl+9,Switch to Tab 9
+118,Tab,,Switch to the Last Tab 
+119,Tab,,Show Closed Tabs
+120,Tab,Ctrl+Z,Reopen Closed Tab
+121,Tab,,Tile Vertically
+122,Tab,,Tile Horizontally
+123,Tab,,Tile to Grid
+124,Tab,,Untile Tabs
+125,Tab,,Create Tab Stack 
+126,Tab,,Ungroup Tab Stack 
+127,Tab,,Remove from Tab Stack
+128,Tab,,Load Images
+129,Tab,,Images On
+130,Tab,,Images Off
+131,Tab,,Load Images From Cache
+132,Tab,,Loop Animations
+133,Tab,,No Animations
+134,Tab,Ctrl+M,Mute / Unmute Tab 
+135,Tab,,Mute Other Tabs 
+136,Tab,,Mute All Tabs 
+137,Tab,,Unmute Other Tabs 
+138,Tab,,Unmute All Tabs 
+139,Tab,,Capture Page to File 
+140,Tab,,Capture Page to Clipboard
+141,Page,,Import Bookmarks and Settings
+142,Page,,Export Bookmarks
+143,Page,,Toggle Reader View 
+144,Page,,Bookmark Selected Tabs 
+145,Page,,Save Open Tabs as Session
+146,Page,,Save Selected Tabs as Session 
+147,Page,,Open Saved Session
+148,Page,,Create Bookmark
+149,Page,Ctrl+P,Focus Address Field
+150,Page,R,Reload Page
+151,Page,Shift+R,Force Page Reload
+152,Page,K,Page Up
+153,Page,J,Page Down
+154,Page,Ctrl+K,Scroll Page to Top
+155,Page,Ctrl+J,Scroll Page to Bottom
+156,Page,,Focus Page
+157,Page,,Disable Keyboard Shortcuts
+158,Page,,Focus Search Field
+159,Page,/,Find in Page
+160,Page,,Find Next in Page
+161,Page,,Find Previous in Page
+162,Page,H,History Back
+163,Page,L,History Forward
+164,Page,Ctrl+H,History Rewind
+165,Page,Ctrl+L,Fast Forward
+166,Page,Esc,Stop Loading
+167,Page,Ctrl+O,Open File
+168,Page,Ctrl+S,Save Page As
+169,Page,,Search with Selection
+170,Page,Alt+Home,Home
+171,Page,,Copy Selected Text to Note
+172,Page,Shift+Left or Shift+H,Spatial Navigation Left
+173,Page,Shift+Up or Shift+K,Spatial Navigation Up
+174,Page,Shift+Right or Shift+L,Spatial Navigation Right
+175,Page,Shift+Down or Shift+J,Spatial Navigation Down
