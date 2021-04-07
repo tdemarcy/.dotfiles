@@ -23,6 +23,7 @@ sudo apt -y install curl
 sudo apt -y install wget
 sudo apt -y install tree
 sudo apt -y install fzf
+sudo apt -y install htop
 
 # Install vim
 sudo apt -y install vim
@@ -35,3 +36,7 @@ sudo apt -y install python3-tk
 # Install image viewer
 sudo apt -y install feh
 
+# Install Vivaldi
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+sudo apt update && sudo apt install vivaldi-stable
