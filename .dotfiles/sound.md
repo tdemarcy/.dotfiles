@@ -14,9 +14,9 @@ su -
 adduser USERNAME audio
 ```
 
-## Install Advanced Linux Sound Architecture (ALSA)
+## Install PulseAudio daemon and front-end
 ```sh
-sudo apt install alsa-utils
-sudo alsactl init
+sudo apt install pulseaudio
+sudo apt install pulsemixer
 ```
 

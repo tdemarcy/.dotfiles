@@ -6,9 +6,10 @@ general {
   color_degraded = "#f7ca88"
 }
 
-order += "cpu_usage"
-order += "cpu_temperature 0"
-order += "disk /"
+# order += "cpu_usage"
+# order += "cpu_temperature 0"
+# order += "disk /"
+order += "volume master"
 order += "time"
 
 cpu_usage {
@@ -25,6 +26,11 @@ disk "/" {
   prefix_type = "decimal"
 }
 
+volume master {
+  format = "🔉 %volume"
+  format_muted = "🔇 %volume"
+}
+
 time {
-  format = "%H:%M %d/%m/%Y "
+  format = "%d/%m/%Y %H:%M "
 }
