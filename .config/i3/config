@@ -237,6 +237,11 @@ bindsym $mod+m exec "pulsemixer --toggle-mute"
 bindsym $mod+comma exec "pulsemixer --change-volume -5"
 bindsym $mod+period exec "pulsemixer --change-volume +5"
 
+# Screenshots
+bindsym Print exec "scrot 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pictures/screenshots/'"
+# with interactive mouse selection
+bindsym --release $mod+p exec "scrot -s 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pictures/screenshots/'"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
