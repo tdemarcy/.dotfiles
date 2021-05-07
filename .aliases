@@ -24,7 +24,10 @@ activate () {
   fi
 }
 
+open () {
+  xdg-open $@ &!
+}
+
 alias python='python3'
 alias pip='pip3'
-alias feh='feh --image-bg #181818'
-
+alias show='feh --image-bg #181818 -.'
