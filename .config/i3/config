@@ -54,6 +54,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec rxvt-unicode
+bindsym $mod+Control+Return exec rxvt-unicode -name rxvt_floating
 
 # start a browser
 bindsym $mod+Shift+Return exec vivaldi --new-window https://duckduckgo.com
@@ -148,10 +149,10 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # carry window to next workspace
-bindsym $mod+n move container to workspace next; workspace next
+bindsym $mod+n move container to workspace next, workspace next
 
 # carry window to previous workspace
-bindsym $mod+Shift+n move container to workspace prev; workspace prev
+bindsym $mod+Shift+n move container to workspace prev, workspace prev
 
 # switch between the current and the previously focused one
 bindsym $mod+z workspace back_and_forth
@@ -230,15 +231,17 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+Control+1 resize set 960 960; move absolute position center
-bindsym $mod+Control+2 resize set 640 400; move absolute position center
-bindsym $mod+Control+3 resize set 480 720; move absolute position center
-bindsym $mod+Control+0 resize set 1920 1080; move absolute position center
+bindsym $mod+Control+1 resize set 960 960 px, move absolute position center
+bindsym $mod+Control+2 resize set 640 400 px, move absolute position center
+bindsym $mod+Control+3 resize set 480 300 px, move absolute position center
+bindsym $mod+Control+4 resize set 320 200 px, move absolute position center
+bindsym $mod+Control+0 resize set 1920 1080 px, move absolute position center
 
 # Sound
-bindsym $mod+m exec "pulsemixer --toggle-mute"
-bindsym $mod+comma exec "pulsemixer --change-volume -5"
-bindsym $mod+period exec "pulsemixer --change-volume +5"
+bindsym $mod+Shift+s exec rxvt-unicode -name rxvt_floating -hold -e pulsemixer
+bindsym $mod+m exec pulsemixer --toggle-mute
+bindsym $mod+comma exec pulsemixer --change-volume -5
+bindsym $mod+period exec pulsemixer --change-volume +5
 
 # Screenshots
 bindsym Print exec "scrot 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pictures/screenshots/'"
@@ -279,7 +282,10 @@ default_border pixel 1
 hide_edge_borders smart
 
 # image viewer in floating mode
-for_window [class="feh"] floating enable
+for_window [class="feh"] floating enable, move absolute position center
+
+# terminal in floating mode
+for_window [instance="rxvt_floating"] floating enable, sticky enable
 
 # force floating when necessary
 # for_window [window_role="About"] floating enable
