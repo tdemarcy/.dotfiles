@@ -94,5 +94,9 @@ bindkey -M vicmd '\e[B' history-beginning-search-forward
 bindkey -M vicmd j history-beginning-search-forward
 
 
+# dircolors
+eval "$(dircolors ~/.dircolors)";
+
+
 # Aliases:
 source $HOME/.aliases
