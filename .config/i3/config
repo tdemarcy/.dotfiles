@@ -39,6 +39,9 @@ font pango:Hack 10
 # Wallpaper
 exec_always --no-startup-id feh --bg-fill $HOME/pictures/wallpaper.jpg
 
+# hide the mouse
+exec_always --no-startup-id mousetrap -t 1
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up k
