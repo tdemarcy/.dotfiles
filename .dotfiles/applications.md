@@ -11,8 +11,19 @@ Vivaldi, a proprietary browser based on Chromium
 * Onivim 2
 * Visual Studio Code
 
+## Document Viewer
+zathura
+
+as default pdf viewer
+```sh
+xdg-mime default org.pwmt.zathura.desktop application/pdf
+```
+
 ## Image Viewer
 feh, also used as wallpapersetter
+
+## Sound server
+PulseAudio with PulseMixer
 
 ## Office
 LibreOffice
@@ -20,5 +31,5 @@ LibreOffice
 ## Media player
 VLC media player
 
-## Screenshot
-TBD
+## Screenshots
+scrot
