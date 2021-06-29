@@ -253,6 +253,7 @@ bindsym --release $mod+p exec "scrot -s 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'm
 bar {
         status_command i3status
         position top
+        tray_output none
         colors {
                 background $background
                 statusline $foreground
@@ -283,6 +284,7 @@ hide_edge_borders smart
 
 # image viewer in floating mode
 for_window [class="feh"] floating enable, move absolute position center
+for_window [class="vtk"] floating enable, move absolute position center
 
 # terminal in floating mode
 for_window [instance="rxvt_floating"] floating enable, sticky enable
