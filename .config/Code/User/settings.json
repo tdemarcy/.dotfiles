@@ -3,7 +3,6 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "editor.fontFamily": "'Hack'",
-    "workbench.colorTheme": "Base16 Default Dark",
     "window.menuBarVisibility": "toggle",
     "workbench.colorCustomizations": {
         "statusBar.background": "#585858",
@@ -27,12 +26,22 @@
         "terminal.ansiMagenta": "#BA8BAF",
         "terminal.ansiRed": "#AB4642",
         "terminal.ansiWhite": "#D8D8D8",
-        "terminal.ansiYellow": "#F7CA88"
+        "terminal.ansiYellow": "#F7CA88",
     },
     "amVim.bindCtrlCommands": false,
     "amVim.useSystemClipboard": true,
     "python.languageServer": "Pylance",
     "files.watcherExclude": {
         "**/.env/**": true
-    }
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "jupyter.askForKernelRestart": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "[python]": {
+        "editor.rulers": [80, 88]
+    },
+    "workbench.colorTheme": "Base16 Default Dark",
 }
