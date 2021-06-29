@@ -1,8 +1,9 @@
 [user]
-	email = tdemarcy@gmail.com
 	name = Thomas Demarcy
-
+	email = tdemarcy@gmail.com
 [color]
 	diff = auto 
 	status = auto 
 	branch = auto 
+[core]
+	editor = vim
