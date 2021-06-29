@@ -24,6 +24,8 @@ sudo apt -y install wget
 sudo apt -y install tree
 sudo apt -y install fzf
 sudo apt -y install htop
+sudo apt -y install scrot
+sudo apt -y install pulsemixer
 
 # Install vim
 sudo apt -y install vim
