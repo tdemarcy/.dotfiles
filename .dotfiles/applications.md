@@ -7,9 +7,7 @@ rxvt-unicode
 Vivaldi, a proprietary browser based on Chromium
 
 ## Text editors
-* vim
-* Onivim 2
-* Visual Studio Code
+Visual Studio Code
 
 ## Document Viewer
 zathura
