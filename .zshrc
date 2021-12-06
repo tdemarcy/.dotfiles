@@ -1,5 +1,5 @@
 # Path:
-export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/opt"
+export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/opt:/home/thomas/.local/bin"
 
 
 # Navigation:
