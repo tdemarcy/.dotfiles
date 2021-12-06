@@ -9,6 +9,7 @@ general {
 # order += "cpu_usage"
 # order += "cpu_temperature 0"
 # order += "disk /"
+order += "battery 0"
 order += "volume master"
 order += "time"
 
@@ -24,6 +25,16 @@ cpu_temperature 0 {
 disk "/" {
   format = "%used (%percentage_used)"
   prefix_type = "decimal"
+}
+
+battery 0 {
+  format = "%status %percentage"
+  integer_battery_capacity = true
+  status_chr = "⚡"
+  status_bat = "🔋"
+  status_unk = "?"
+  status_full = "✔️"
+  low_threshold = 10
 }
 
 volume master {
