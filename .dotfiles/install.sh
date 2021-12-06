@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set final keyboard layout
-keyboard_layout/set_layout.sh
+./keyboard_layout/set_layout.sh
 
 # Install X and i3
 sudo apt -y install xorg
@@ -16,14 +16,18 @@ sudo apt -y install zsh
 chsh -s $(which zsh)
 sudo ln -s $HOME/.zshrc /root/.zshrc
 sudo ln -s $HOME/.aliases /root/.aliases
+sudo ln -s $HOME/.dircolors /root/.dircolors
+sudo rm -f /root/.history
+sudo ln -s $HOME/.history /root/.history
 sudo chsh -s $(which zsh)
 
 # Set user directories
 mkdir $HOME/downloads
-mdkir $HOME/documents
+mkdir $HOME/documents
 mkdir $HOME/music
 mkdir $HOME/pictures
 mkdir $HOME/videos
+mkdir $HOME/projects
 
 # Install command-line tools
 sudo apt -y install curl
@@ -39,10 +43,12 @@ sudo apt -y install xclip
 # Install vim
 sudo apt -y install vim
 
-# Install build system
+# Install build system and Python
 sudo apt -y install build-essential
 sudo apt -y install python3-dev
+sudo apt -y install python3-setuptools
 sudo apt -y install python3-tk
+sudo apt -y install python3-venv
 
 # Install image viewer
 sudo apt -y install feh
@@ -56,13 +62,15 @@ sudo apt update && sudo apt -y install vivaldi-stable
 
 # Install VLC medial player
 sudo apt -y install vlc
+sudo apt -y install avahi-daemon # for chromecast support
 
 # Install Office
 sudo apt -y install libreoffice
 
 # Install Document Viewer
 sudo apt -y install zathura
+xdg-mime default org.pwmt.zathura.desktop application/pdf
 
 # Install multimedia command line tools
-sudo apt install ffmpeg
-sudo apt install imagemagick
+sudo apt -y install ffmpeg
+sudo apt -y install imagemagick
