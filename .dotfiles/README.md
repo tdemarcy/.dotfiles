@@ -17,7 +17,7 @@ git clone --bare https://github.com/tdemarcy/dotfiles.git $HOME/.dotfiles
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 ```
 
-## Install [applications](applications.md)
+## Install applications
 ```sh
 .dotfiles/install.sh
 ```
@@ -27,5 +27,11 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 * X resources
 * i3 (using values from X resources)
 * i3status
-* [Base16 Generator Extension](https://github.com/golf1052/base16-vscode) for VSCode and Onivim2
+* dunst
+* [Base16 Generator Extension](https://github.com/golf1052/base16-vscode) for vscode
 * dark background for feh image viewer
+
+## Frequently used applications
+* [Python](python.md)
+* [Docker](docker.md)
+* [Mouse](mouse.md)
