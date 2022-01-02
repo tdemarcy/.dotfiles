@@ -19,4 +19,3 @@ adduser USERNAME audio
 sudo apt install pulseaudio
 sudo apt install pulsemixer
 ```
-
