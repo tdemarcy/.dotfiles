@@ -58,11 +58,16 @@ function set-prompt {
 
 
   # python virtual env
-  if [[ ${VIRTUAL_ENV} == "" ]]
+  if [[ $VIRTUAL_ENV == "" ]]
   then
     VIRTUAL_ENV_PROMPT=""
+  # if in project
+  elif [[ $PWD == $(dirname $VIRTUAL_ENV)* ]]
+  then
+    VIRTUAL_ENV_PROMPT="▶ "
   else
-    VIRTUAL_ENV_PROMPT="(${VIRTUAL_ENV##*/}) "
+    # strip directory and .venv
+    VIRTUAL_ENV_PROMPT="($(dirname $VIRTUAL_ENV | xargs basename)) "
   fi
   RPROMPT="%F{blue}$VIRTUAL_ENV_PROMPT%f$vcs_info_msg_0_"
 }

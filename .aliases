@@ -15,19 +15,14 @@ config () {
 }
 
 activate () {
-  if [ -d ".env" ]
+  if [ -d ".venv" ]
   then
-    VIRTUAL_ENV_NAME=`ls .env | head -n 1`
-    source .env/$VIRTUAL_ENV_NAME/bin/activate
+    source .venv/bin/activate
   else
-    echo ".env directory not found"
+    echo ".venv directory not found"
   fi
 }
 
-open () {
-  xdg-open $@ &!
-}
-
+alias open="xdg-open"
 alias python='python3'
-alias pip='pip3'
 alias show='feh --image-bg #181818 -.'
