@@ -23,6 +23,7 @@ activate () {
   fi
 }
 
-alias open="xdg-open"
+alias bat='batcat --theme=base16'
+alias open='xdg-open'
 alias python='python3'
-alias show='feh --image-bg #181818 -.'
+alias show='feh --image-bg #181818 --scale-down'
