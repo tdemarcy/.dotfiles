@@ -34,3 +34,26 @@ pythonx.x --version
 
 * For a clean and [FHS](https://www.debian.org/doc/packaging-manuals/fhs/fhs-3.0.html) compliant installation: sources are in `/usr/local/src` , package is installed in `/opt` and the binary is linked in `/usr/local/bin`.
 * `-j` option specifies the number of jobs to run simultaneously. Use `nproc` to print the number of processing units available.
+
+# Manage environments
+
+Install Poetry.
+
+```sh
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Check that `$HOME/.local/bin` is on your `PATH`.
+
+Set virtualenv inside project root directory in a folder named `.venv`
+
+```sh
+poetry config virtualenvs.in-project true
+```
+
+Select Python version.
+
+```sh
+cd project/path
+poetry env use 3.x
+```
