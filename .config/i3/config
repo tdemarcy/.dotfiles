@@ -37,7 +37,7 @@ font pango:Hack 10
 # font, it doesn't scale on retina/hidpi displays.
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/pictures/wallpaper.jpg
+exec_always --no-startup-id feh --image-bg '$background' --bg-center ~/.wallpaper/*
 
 # hide the mouse
 exec_always --no-startup-id mousetrap -t 1
@@ -248,6 +248,9 @@ bindsym Print exec "scrot 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/picture
 # with interactive mouse selection
 bindsym --release $mod+p exec "scrot -s 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pictures/screenshots/'"
 
+# Lock
+bindsym $mod+Escape exec i3lock -u -i ~/.wallpaper/lock/baseline_lock_gray_48dp.png -c '$background'
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -284,7 +287,6 @@ hide_edge_borders smart
 
 # image viewer in floating mode
 for_window [class="feh"] floating enable, move absolute position center
-for_window [class="vtk"] floating enable, move absolute position center
 
 # terminal in floating mode
 for_window [instance="rxvt_floating"] floating enable, sticky enable
