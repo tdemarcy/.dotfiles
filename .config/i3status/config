@@ -9,6 +9,9 @@ general {
 # order += "cpu_usage"
 # order += "cpu_temperature 0"
 # order += "disk /"
+# order += "read_file uptime"
+order += "path_exists VPN"
+order += "wireless wlo1"
 order += "battery 0"
 order += "volume master"
 order += "time"
@@ -27,18 +30,37 @@ disk "/" {
   prefix_type = "decimal"
 }
 
+read_file uptime {
+  color_good = "#d8d8d8"
+  path = "/proc/uptime"
+}
+
+path_exists VPN {
+  # path exists when a VPN tunnel launched by openvpn is active
+  path = "/proc/sys/net/ipv4/conf/tun0"
+  format = ""
+  format_down = ""
+  separator = false
+}
+
+wireless wlo1 {
+  color_good = "#d8d8d8"
+  format_up = ""
+  format_down = ""
+}
+
 battery 0 {
   format = "%status %percentage"
   integer_battery_capacity = true
-  status_chr = "⚡"
-  status_bat = "🔋"
-  status_unk = "?"
-  status_full = "✔️"
+  status_chr = ""
+  status_bat = ""
+  status_unk = ""
+  status_full = ""
   low_threshold = 10
 }
 
 volume master {
-  format = "🔉 %volume"
+  format = "🔈 %volume"
   format_muted = "🔇 %volume"
 }
 
