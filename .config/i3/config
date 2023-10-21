@@ -20,10 +20,9 @@ set_from_resource $focus color6
 set_from_resource $unfocus color8
 set_from_resource $border color3
 
-
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Hack 10
+font pango: Hack 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -53,11 +52,11 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec rxvt-unicode
-bindsym $mod+Control+Return exec rxvt-unicode -name rxvt_floating
+bindsym $mod+Return exec alacritty
+bindsym $mod+Control+Return exec alacritty -name term_floating
 
 # start a browser
-bindsym $mod+Shift+Return exec vivaldi --new-window https://duckduckgo.com
+bindsym $mod+Shift+Return exec qutebrowser
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -231,17 +230,24 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+Control+1 resize set 960 960 px, move absolute position center
-bindsym $mod+Control+2 resize set 640 400 px, move absolute position center
-bindsym $mod+Control+3 resize set 480 300 px, move absolute position center
-bindsym $mod+Control+4 resize set 320 200 px, move absolute position center
-bindsym $mod+Control+0 resize set 1920 1080 px, move absolute position center
+bindsym $mod+Control+1 resize set 640 640 px, move absolute position center
+bindsym $mod+Control+2 resize set 640 480 px, move absolute position center
+bindsym $mod+Control+3 resize set 480 320 px, move absolute position center
+bindsym $mod+Control+4 resize set 320 240 px, move absolute position center
+bindsym $mod+Control+0 resize set 1366 768 px, move absolute position center
 
 # Sound
-bindsym $mod+Shift+s exec rxvt-unicode -name rxvt_floating -hold -e pulsemixer
+bindsym $mod+Shift+s exec alacritty -name rxvt_floating -hold -e pulsemixer
 bindsym $mod+m exec pulsemixer --toggle-mute
 bindsym $mod+comma exec pulsemixer --change-volume -5
 bindsym $mod+period exec pulsemixer --change-volume +5
+bindsym XF86AudioMute exec pulsemixer --toggle-mute
+bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
+bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
+
+# Brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 
 # Screenshots
 bindsym Print exec "scrot 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/pictures/screenshots/'"
@@ -251,10 +257,14 @@ bindsym --release $mod+p exec "scrot -s 'screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'm
 # Lock
 bindsym $mod+Escape exec i3lock -u -i ~/.wallpaper/lock/baseline_lock_gray_48dp.png -c '$background'
 
+# bindcode 66 exec pulsemixer --toggle-mute
+# bindcode --release 66 exec pulsemixer --toggle-mute
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3status
+        font pango: Hack, Font Awesome 10
         position top
         tray_output none
         colors {
@@ -289,7 +299,7 @@ hide_edge_borders smart
 for_window [class="feh"] floating enable, move absolute position center
 
 # terminal in floating mode
-for_window [instance="rxvt_floating"] floating enable, sticky enable
+for_window [instance="term_floating"] floating enable, sticky enable
 
 # force floating when necessary
 # for_window [window_role="About"] floating enable
