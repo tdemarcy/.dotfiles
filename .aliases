@@ -6,16 +6,20 @@ config () {
   if [[ $1 == "clean" ]]
   then
     echo "impossible to clean home directory"
+    return 1
   elif [[ $1 == "status" ]]
   then
     command /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status --untracked-files=no
+  elif [[ $1 == "tree" ]]
+  then
+    command /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME ls-tree -r --name-only HEAD | tree --fromfile
   else
     command /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME "$@"
   fi
 }
 
 activate () {
-  if [ -d ".venv" ]
+  if [[ -d ".venv" ]]
   then
     source .venv/bin/activate
   else
