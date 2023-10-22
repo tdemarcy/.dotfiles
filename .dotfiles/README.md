@@ -27,9 +27,9 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 
 ## Dotfile Management
 
-The approach used in this repository is based on the "bare repository and alias method" popularized on [Ask Hacker News: What do you use to manage your dotfiles?](https://news.ycombinator.com/item?id=11071754)
+The approach used in this repository is based on the "bare repository and alias method" popularized on [Ask Hacker News: What do you use to manage your dotfiles?](https://news.ycombinator.com/item?id=11071754).
 
-You can manage your dotfiles with the provided `config`` command, which acts as a wrapper around `git`` commands.
+You can manage your dotfiles with the provided `config` command, which acts as a wrapper around `git` commands.
 
 Examples:
 
