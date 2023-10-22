@@ -34,9 +34,13 @@ export FZF_CTRL_T_OPTS="--preview 'batcat -n --color=always {}'"
 # Aliases
 alias bat='batcat'
 alias cat='batcat -p'
+
 alias ..='cd ..'
 alias ~='cd ~'
+
 alias ls='ls --color=auto'
+alias la='ls -A'
+alias ll='ls -l'
 
 # Wrapper for managing dotfiles using Git
 config() {
@@ -44,7 +48,6 @@ config() {
     case "$1" in
         status) $GIT_CMD status --untracked-files=no ;;
         ls-tree) $GIT_CMD ls-tree -r --name-only HEAD | tree --fromfile ;;
-        track) shift; $GIT_CMD add "$@" ;;
         untrack) shift; $GIT_CMD rm --cached "$@" ;;
         clean) echo "config: 'clean' is not supported." ;;
         *) $GIT_CMD "$@" ;;
