@@ -3,10 +3,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Start Xorg on first virtual terminal if no X display
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
 # Path
-USER_PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/opt"
-USER_PATH+=":/home/$LOGNAME/.local/bin:/home/$LOGNAME/.cargo/bin"
-export PATH="$USER_PATH:$PATH"
+OPTIONAL_PATH="/usr/sbin:/opt"
+USER_PATH="/home/$LOGNAME/.local/bin:/home/$LOGNAME/.cargo/bin"
+export PATH="$PATH:$OPTIONAL_PATH:$USER_PATH"
 
 # History settings
 HISTCONTROL=ignoreboth
